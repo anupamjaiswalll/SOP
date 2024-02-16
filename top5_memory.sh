@@ -22,3 +22,5 @@ while IFS= read -r line; do
     # Print process information
     printf "%-10s %-20s %-10s %-50s\n" "$pid" "$service" "$mem" "$path"
 done <<< "$top_processes"
+
+#save this to logfile and then restart mongoser service.
