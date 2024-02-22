@@ -47,7 +47,7 @@ restart_mongod_raptor_bny() {
 
 # Function to print number of cores
 print_core_count() {
-    echo -e "${YELLOW}Number of cores:${NC} $(grep -c ^processor /proc/cpuinfo)"
+    echo -e "${YELLOW}Number of cores: ${NC}$(grep -c ^processor /proc/cpuinfo)"
 }
 
 # Function to display top 5 CPU processes
@@ -85,4 +85,5 @@ do
         7) exit;;
         *) echo -e "${RED}Invalid option. Please try again.${NC}";;
     esac
+    echo ""
 done
